@@ -13,7 +13,7 @@ class AuthTest extends TestCase
 
     public function test_login_redirect_to_dashbaord(): void
     {
-
+        $user = User::factory()->create();
         User::create([
             'name' => 'obi',
             'email' => 'obi@gmail.com',
